@@ -48,3 +48,5 @@ socket.on('card', ([data]) => {
     createCardClient(payload.columnId, payload.cardId, payload.content)
   }
 })
+
+console.log('asdasdasdasd')
