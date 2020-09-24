@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
 export const socket = io.connect(
   process.env.NODE_ENV === 'development'
     ? 'ws://localhost:12100'
-    : 'wss://todo.woowahan.dev:12100'
+    : 'wss://todo.woowahan.dev'
 )
 
 socket.on('card', ([data]) => {
