@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
 export const socket = io.connect(
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:12100'
-    : 'https://todo.woowahan.dev'
+    : 'https://todo.woowahan.dev:12100'
 )
 
 socket.on('card', ([data]) => {
@@ -48,5 +48,3 @@ socket.on('card', ([data]) => {
     createCardClient(payload.columnId, payload.cardId, payload.content)
   }
 })
-
-console.log('asdasdasdasd')
